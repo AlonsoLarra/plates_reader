@@ -1,4 +1,4 @@
-# TrainAndTest.py
+#!/usr/bin/env python
 
 import cv2
 import numpy as np
@@ -35,11 +35,11 @@ class ContourWithData():
     def checkIfContourIsValid(self):                            # this is oversimplified, for a production grade program
         if self.intRectHeight > 70 and self.intRectHeight < 80 and self.intRectWidth <70:
         #if self.intRectHeight > 0 and self.intRectHeight < 80 and self.intRectWidth < 70:
-            print "PASS"
+#            print "PASS"
             return True
-        print self.intRectHeight
-        print self.intRectWidth
-        print "nO PASS"
+#        print self.intRectHeight
+#        print self.intRectWidth
+#        print "nO PASS"
         return False
 
 ###################################################################################################
@@ -49,7 +49,7 @@ def main():
 
     try:
         npaClassifications = np.loadtxt("classifications.txt", np.float32)                  # read in training classifications
-        print "lOADED CLASSIFICATIONS"
+#        print "lOADED CLASSIFICATIONS"
     except:
         print "error, unable to open classifications.txt, exiting program\n"
         os.system("pause")
@@ -80,7 +80,7 @@ def main():
 
 
     imgGray = cv2.cvtColor(imgTestingNumbers, cv2.COLOR_BGR2GRAY)       # get grayscale image
-    cv2.imshow("imgGray", imgGray)
+#    cv2.imshow("imgGray", imgGray)
     imgBlurred = cv2.GaussianBlur(imgGray, (5,5), 0)                    # blur
     #cv2.imshow("imgBlurred", imgBlurred)
                                                         # filter image from grayscale to black and white
@@ -95,9 +95,9 @@ def main():
 
     noNoise = cv2.fastNlMeansDenoisingMulti(imgBlurred, 2, 5, None, 4, 7 , 35)
 
-    cv2.imshow("test", noNoise)
+#    cv2.imshow("test", noNoise)
 
-    cv2.imshow("imgThreshCopy", imgThreshCopy)
+#    cv2.imshow("imgThreshCopy", imgThreshCopy)
 
     imgContours, npaContours, npaHierarchy = cv2.findContours(imgThreshCopy,             # input image, make sure to use a copy since the function will modify this image in the course of finding contours
                                                  cv2.RETR_EXTERNAL,         # retrieve the outermost contours only
@@ -148,7 +148,7 @@ def main():
 
     print "\n" + strFinalString + "\n"                  # show the full string
 
-    cv2.imshow("imgTestingNumbers", imgTestingNumbers)      # show input image with green boxes drawn around found digits
+	#    cv2.imshow("imgTestingNumbers", imgTestingNumbers)      # show input image with green boxes drawn around found digits
     cv2.waitKey(0)                                          # wait for user key press
 
     cv2.destroyAllWindows()             # remove windows from memory

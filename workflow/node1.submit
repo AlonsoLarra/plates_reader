@@ -1,0 +1,13 @@
+Universe	= vanilla
+initialdir	= /home/alonsolarra/Plates_Reader/plates_reader/src/
+Executable	= node1.sh
+script_name	= node1.py
+script_path	= /home/alonsolarra/Plates_Reader/plates_reader/src
+output_path	= /home/alonsolarra/Plates_Reader/plates_reader/out/
+
+Arguments	= "$(script_path) $(script_name) $Fp(FILE) $(output_path)"
+Log		= /home/alonsolarra/Plates_Reader/plates_reader/$Fp(FILE).log
+Error		= /home/alonsolarra/Plates_Reader/plates_reader/$Fp(FILE).error
+queue FILE MATCHING (
+    /home/alonsolarra/Plates_Reader/plates_reader/plates/*.png
+)
