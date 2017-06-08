@@ -6,7 +6,7 @@ import numpy as np
 import operator
 import os
 
-# module level variables ##########################################################################
+
 MIN_CONTOUR_AREA = 100
 MIN_CONTOUR_HEIGHT = 100
 
@@ -14,13 +14,13 @@ MIN_CONTOUR_HEIGHT = 100
 RESIZED_IMAGE_WIDTH = 20
 RESIZED_IMAGE_HEIGHT = 30
 
-###################################################################################################
+
 class ContourWithData():
 
-    # member variables ############################################################################
-    npaContour = None           # contour
-    boundingRect = None         # bounding rect for contour
-    intRectX = 0                # bounding rect top left corner x location
+
+    npaContour = None       
+    boundingRect = None         
+    intRectX = 0                
     intRectY = 0                # bounding rect top left corner y location
     intRectWidth = 0            # bounding rect width
     intRectHeight = 0           # bounding rect height
@@ -148,7 +148,7 @@ def main():
     # end for
 
     print "\n" + strFinalString + "\n"                  # show the full string
-    file = open("test.txt","w")
+    file = open(sys.argv[2],"w")
     file.write(strFinalString)
     file.close()
 

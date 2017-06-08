@@ -1,0 +1,4 @@
+JOB A node1.submit
+JOB B node2.submit
+SCRIPT POST B clean.sh
+PARENT A CHILD B
