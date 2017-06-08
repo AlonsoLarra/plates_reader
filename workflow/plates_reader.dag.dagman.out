@@ -1,0 +1,193 @@
+06/07/17 23:37:46 ******************************************************
+06/07/17 23:37:46 ** condor_scheduniv_exec.43.0 (CONDOR_DAGMAN) STARTING UP
+06/07/17 23:37:46 ** /usr/bin/condor_dagman
+06/07/17 23:37:46 ** SubsystemInfo: name=DAGMAN type=DAGMAN(10) class=DAEMON(1)
+06/07/17 23:37:46 ** Configuration: subsystem:DAGMAN local:<NONE> class:DAEMON
+06/07/17 23:37:46 ** $CondorVersion: 8.4.2 Feb 22 2016 BuildID: Debian-8.4.2~dfsg.1-1build1 Debian-8.4.2~dfsg.1-1build1 $
+06/07/17 23:37:46 ** $CondorPlatform: X86_64-Ubuntu_ $
+06/07/17 23:37:46 ** PID = 2456
+06/07/17 23:37:46 ** Log last touched time unavailable (No such file or directory)
+06/07/17 23:37:46 ******************************************************
+06/07/17 23:37:46 Using config source: /etc/condor/condor_config
+06/07/17 23:37:46 Using local config sources: 
+06/07/17 23:37:46    /etc/condor/config.d/00debconf
+06/07/17 23:37:46    /etc/condor/condor_config.local
+06/07/17 23:37:46 config Macros = 66, Sorted = 66, StringBytes = 1999, TablesBytes = 2432
+06/07/17 23:37:46 CLASSAD_CACHING is ENABLED
+06/07/17 23:37:46 Daemon Log is logging: D_ALWAYS D_ERROR
+06/07/17 23:37:46 DaemonCore: No command port requested.
+06/07/17 23:37:46 DAGMAN_USE_STRICT setting: 1
+06/07/17 23:37:46 DAGMAN_VERBOSITY setting: 3
+06/07/17 23:37:46 DAGMAN_DEBUG_CACHE_SIZE setting: 5242880
+06/07/17 23:37:46 DAGMAN_DEBUG_CACHE_ENABLE setting: False
+06/07/17 23:37:46 DAGMAN_SUBMIT_DELAY setting: 0
+06/07/17 23:37:46 DAGMAN_MAX_SUBMIT_ATTEMPTS setting: 6
+06/07/17 23:37:46 DAGMAN_STARTUP_CYCLE_DETECT setting: False
+06/07/17 23:37:46 DAGMAN_MAX_SUBMITS_PER_INTERVAL setting: 5
+06/07/17 23:37:46 DAGMAN_USER_LOG_SCAN_INTERVAL setting: 5
+06/07/17 23:37:46 DAGMAN_DEFAULT_PRIORITY setting: 0
+06/07/17 23:37:46 DAGMAN_SUPPRESS_NOTIFICATION setting: True
+06/07/17 23:37:46 allow_events (DAGMAN_ALLOW_EVENTS) setting: 114
+06/07/17 23:37:46 DAGMAN_RETRY_SUBMIT_FIRST setting: True
+06/07/17 23:37:46 DAGMAN_RETRY_NODE_FIRST setting: False
+06/07/17 23:37:46 DAGMAN_MAX_JOBS_IDLE setting: 1000
+06/07/17 23:37:46 DAGMAN_MAX_JOBS_SUBMITTED setting: 0
+06/07/17 23:37:46 DAGMAN_MAX_PRE_SCRIPTS setting: 20
+06/07/17 23:37:46 DAGMAN_MAX_POST_SCRIPTS setting: 20
+06/07/17 23:37:46 DAGMAN_ALLOW_LOG_ERROR setting: False
+06/07/17 23:37:46 DAGMAN_MUNGE_NODE_NAMES setting: True
+06/07/17 23:37:46 DAGMAN_PROHIBIT_MULTI_JOBS setting: False
+06/07/17 23:37:46 DAGMAN_SUBMIT_DEPTH_FIRST setting: False
+06/07/17 23:37:46 DAGMAN_ALWAYS_RUN_POST setting: True
+06/07/17 23:37:46 DAGMAN_ABORT_DUPLICATES setting: True
+06/07/17 23:37:46 DAGMAN_ABORT_ON_SCARY_SUBMIT setting: True
+06/07/17 23:37:46 DAGMAN_PENDING_REPORT_INTERVAL setting: 600
+06/07/17 23:37:46 DAGMAN_AUTO_RESCUE setting: True
+06/07/17 23:37:46 DAGMAN_MAX_RESCUE_NUM setting: 100
+06/07/17 23:37:46 DAGMAN_WRITE_PARTIAL_RESCUE setting: True
+06/07/17 23:37:46 DAGMAN_DEFAULT_NODE_LOG setting: @(DAG_DIR)/@(DAG_FILE).nodes.log
+06/07/17 23:37:46 DAGMAN_GENERATE_SUBDAG_SUBMITS setting: True
+06/07/17 23:37:46 DAGMAN_MAX_JOB_HOLDS setting: 100
+06/07/17 23:37:46 DAGMAN_HOLD_CLAIM_TIME setting: 20
+06/07/17 23:37:46 ALL_DEBUG setting: 
+06/07/17 23:37:46 DAGMAN_DEBUG setting: 
+06/07/17 23:37:46 DAGMAN_SUPPRESS_JOB_LOGS setting: False
+06/07/17 23:37:46 argv[0] == "condor_scheduniv_exec.43.0"
+06/07/17 23:37:46 argv[1] == "-Lockfile"
+06/07/17 23:37:46 argv[2] == "plates_reader.dag.lock"
+06/07/17 23:37:46 argv[3] == "-AutoRescue"
+06/07/17 23:37:46 argv[4] == "1"
+06/07/17 23:37:46 argv[5] == "-DoRescueFrom"
+06/07/17 23:37:46 argv[6] == "0"
+06/07/17 23:37:46 argv[7] == "-Dag"
+06/07/17 23:37:46 argv[8] == "plates_reader.dag"
+06/07/17 23:37:46 argv[9] == "-Suppress_notification"
+06/07/17 23:37:46 argv[10] == "-CsdVersion"
+06/07/17 23:37:46 argv[11] == "$CondorVersion: 8.4.2 Feb 22 2016 BuildID: Debian-8.4.2~dfsg.1-1build1 Debian-8.4.2~dfsg.1-1build1 $"
+06/07/17 23:37:46 argv[12] == "-Dagman"
+06/07/17 23:37:46 argv[13] == "/usr/bin/condor_dagman"
+06/07/17 23:37:46 Warning: failed to get attribute DAGNodeName
+06/07/17 23:37:46 Default node log file is: </home/alonsolarra/plates_reader/plates_reader/workflow/./plates_reader.dag.nodes.log>
+06/07/17 23:37:46 DAG Lockfile will be written to plates_reader.dag.lock
+06/07/17 23:37:46 DAG Input file is plates_reader.dag
+06/07/17 23:37:46 Parsing 1 dagfiles
+06/07/17 23:37:46 Parsing plates_reader.dag ...
+06/07/17 23:37:46 Dag contains 2 total jobs
+06/07/17 23:37:46 Sleeping for 3 seconds to ensure ProcessId uniqueness
+06/07/17 23:37:49 Bootstrapping...
+06/07/17 23:37:49 Number of pre-completed nodes: 0
+06/07/17 23:37:49 MultiLogFiles: truncating log file /home/alonsolarra/plates_reader/plates_reader/workflow/./plates_reader.dag.nodes.log
+06/07/17 23:37:49 DAG status: 0 (DAG_STATUS_OK)
+06/07/17 23:37:49 Of 2 nodes total:
+06/07/17 23:37:49  Done     Pre   Queued    Post   Ready   Un-Ready   Failed
+06/07/17 23:37:49   ===     ===      ===     ===     ===        ===      ===
+06/07/17 23:37:49     0       0        0       0       1          1        0
+06/07/17 23:37:49 0 job proc(s) currently held
+06/07/17 23:37:49 Registering condor_event_timer...
+06/07/17 23:37:50 Submitting Condor Node A job(s)...
+06/07/17 23:37:50 Adding a DAGMan workflow log /home/alonsolarra/plates_reader/plates_reader/workflow/./plates_reader.dag.nodes.log
+06/07/17 23:37:50 Masking the events recorded in the DAGMAN workflow log
+06/07/17 23:37:50 Mask for workflow log is 0,1,2,4,5,7,9,10,11,12,13,16,17,24,27
+06/07/17 23:37:50 submitting: /usr/bin/condor_submit -a dag_node_name' '=' 'A -a +DAGManJobId' '=' '43 -a DAGManJobId' '=' '43 -a submit_event_notes' '=' 'DAG' 'Node:' 'A -a dagman_log' '=' '/home/alonsolarra/plates_reader/plates_reader/workflow/./plates_reader.dag.nodes.log -a +DAGManNodesMask' '=' '"0,1,2,4,5,7,9,10,11,12,13,16,17,24,27" -a DAG_STATUS' '=' '0 -a FAILED_COUNT' '=' '0 -a +DAGParentNodeNames' '=' '"" -a +KeepClaimIdle' '=' '20 -a notification' '=' 'never node1.submit
+06/07/17 23:37:50 From submit: Submitting job(s)..
+06/07/17 23:37:50 From submit: 2 job(s) submitted to cluster 44.
+06/07/17 23:37:50 	assigned Condor ID (44.0.0)
+06/07/17 23:37:50 Just submitted 1 job this cycle...
+06/07/17 23:37:50 Currently monitoring 1 Condor log file(s)
+06/07/17 23:37:50 Reassigning the id of job A from (44.0.0) to (44.0.0)
+06/07/17 23:37:50 Event: ULOG_SUBMIT for Condor Node A (44.0.0)
+06/07/17 23:37:50 Number of idle job procs: 1
+06/07/17 23:37:50 Reassigning the id of job A from (44.0.0) to (44.1.0)
+06/07/17 23:37:50 Event: ULOG_SUBMIT for Condor Node A (44.1.0)
+06/07/17 23:37:50 Number of idle job procs: 2
+06/07/17 23:37:50 DAG status: 0 (DAG_STATUS_OK)
+06/07/17 23:37:50 Of 2 nodes total:
+06/07/17 23:37:50  Done     Pre   Queued    Post   Ready   Un-Ready   Failed
+06/07/17 23:37:50   ===     ===      ===     ===     ===        ===      ===
+06/07/17 23:37:50     0       0        1       0       0          1        0
+06/07/17 23:37:50 0 job proc(s) currently held
+06/07/17 23:38:10 Currently monitoring 1 Condor log file(s)
+06/07/17 23:38:10 Event: ULOG_EXECUTE for Condor Node A (44.0.0)
+06/07/17 23:38:10 Number of idle job procs: 1
+06/07/17 23:38:10 Event: ULOG_JOB_TERMINATED for Condor Node A (44.0.0)
+06/07/17 23:38:10 Number of idle job procs: 1
+06/07/17 23:38:10 Node A job proc (44.0.0) completed successfully.
+06/07/17 23:38:10 Event: ULOG_EXECUTE for Condor Node A (44.1.0)
+06/07/17 23:38:10 Number of idle job procs: 0
+06/07/17 23:38:10 Event: ULOG_JOB_TERMINATED for Condor Node A (44.1.0)
+06/07/17 23:38:10 Number of idle job procs: 0
+06/07/17 23:38:10 Node A job proc (44.1.0) completed successfully.
+06/07/17 23:38:10 Node A job completed
+06/07/17 23:38:10 DAG status: 0 (DAG_STATUS_OK)
+06/07/17 23:38:10 Of 2 nodes total:
+06/07/17 23:38:10  Done     Pre   Queued    Post   Ready   Un-Ready   Failed
+06/07/17 23:38:10   ===     ===      ===     ===     ===        ===      ===
+06/07/17 23:38:10     1       0        0       0       1          0        0
+06/07/17 23:38:10 0 job proc(s) currently held
+06/07/17 23:38:15 Submitting Condor Node B job(s)...
+06/07/17 23:38:15 Adding a DAGMan workflow log /home/alonsolarra/plates_reader/plates_reader/workflow/./plates_reader.dag.nodes.log
+06/07/17 23:38:15 Masking the events recorded in the DAGMAN workflow log
+06/07/17 23:38:15 Mask for workflow log is 0,1,2,4,5,7,9,10,11,12,13,16,17,24,27
+06/07/17 23:38:15 submitting: /usr/bin/condor_submit -a dag_node_name' '=' 'B -a +DAGManJobId' '=' '43 -a DAGManJobId' '=' '43 -a submit_event_notes' '=' 'DAG' 'Node:' 'B -a dagman_log' '=' '/home/alonsolarra/plates_reader/plates_reader/workflow/./plates_reader.dag.nodes.log -a +DAGManNodesMask' '=' '"0,1,2,4,5,7,9,10,11,12,13,16,17,24,27" -a DAG_STATUS' '=' '0 -a FAILED_COUNT' '=' '0 -a +DAGParentNodeNames' '=' '"A" -a notification' '=' 'never node2.submit
+06/07/17 23:38:15 From submit: Submitting job(s)..
+06/07/17 23:38:15 From submit: 2 job(s) submitted to cluster 45.
+06/07/17 23:38:15 	assigned Condor ID (45.0.0)
+06/07/17 23:38:15 Just submitted 1 job this cycle...
+06/07/17 23:38:15 Currently monitoring 1 Condor log file(s)
+06/07/17 23:38:15 Reassigning the id of job B from (45.0.0) to (45.0.0)
+06/07/17 23:38:15 Event: ULOG_SUBMIT for Condor Node B (45.0.0)
+06/07/17 23:38:15 Number of idle job procs: 1
+06/07/17 23:38:15 Reassigning the id of job B from (45.0.0) to (45.1.0)
+06/07/17 23:38:15 Event: ULOG_SUBMIT for Condor Node B (45.1.0)
+06/07/17 23:38:15 Number of idle job procs: 2
+06/07/17 23:38:15 DAG status: 0 (DAG_STATUS_OK)
+06/07/17 23:38:15 Of 2 nodes total:
+06/07/17 23:38:15  Done     Pre   Queued    Post   Ready   Un-Ready   Failed
+06/07/17 23:38:15   ===     ===      ===     ===     ===        ===      ===
+06/07/17 23:38:15     1       0        1       0       0          0        0
+06/07/17 23:38:15 0 job proc(s) currently held
+06/07/17 23:38:20 Currently monitoring 1 Condor log file(s)
+06/07/17 23:38:20 Event: ULOG_EXECUTE for Condor Node B (45.0.0)
+06/07/17 23:38:20 Number of idle job procs: 1
+06/07/17 23:38:20 Event: ULOG_JOB_TERMINATED for Condor Node B (45.0.0)
+06/07/17 23:38:20 Number of idle job procs: 1
+06/07/17 23:38:20 Node B job proc (45.0.0) completed successfully.
+06/07/17 23:38:20 Event: ULOG_EXECUTE for Condor Node B (45.1.0)
+06/07/17 23:38:20 Number of idle job procs: 0
+06/07/17 23:38:20 Event: ULOG_JOB_TERMINATED for Condor Node B (45.1.0)
+06/07/17 23:38:20 Number of idle job procs: 0
+06/07/17 23:38:20 Node B job proc (45.1.0) completed successfully.
+06/07/17 23:38:20 Node B job completed
+06/07/17 23:38:20 Running POST script of Node B...
+06/07/17 23:38:20 Warning: mysin has length 0 (ignore if produced by DAGMan; see gittrac #4987, #5031)
+06/07/17 23:38:20 DAG status: 0 (DAG_STATUS_OK)
+06/07/17 23:38:20 Of 2 nodes total:
+06/07/17 23:38:20  Done     Pre   Queued    Post   Ready   Un-Ready   Failed
+06/07/17 23:38:20   ===     ===      ===     ===     ===        ===      ===
+06/07/17 23:38:20     1       0        0       1       0          0        0
+06/07/17 23:38:20 0 job proc(s) currently held
+06/07/17 23:38:20 Initializing user log writer for /home/alonsolarra/plates_reader/plates_reader/workflow/./plates_reader.dag.nodes.log, (45.0.0)
+06/07/17 23:38:25 Currently monitoring 1 Condor log file(s)
+06/07/17 23:38:25 Event: ULOG_POST_SCRIPT_TERMINATED for Condor Node B (45.0.0)
+06/07/17 23:38:25 POST Script of Node B completed successfully.
+06/07/17 23:38:25 DAG status: 0 (DAG_STATUS_OK)
+06/07/17 23:38:25 Of 2 nodes total:
+06/07/17 23:38:25  Done     Pre   Queued    Post   Ready   Un-Ready   Failed
+06/07/17 23:38:25   ===     ===      ===     ===     ===        ===      ===
+06/07/17 23:38:25     2       0        0       0       0          0        0
+06/07/17 23:38:25 0 job proc(s) currently held
+06/07/17 23:38:25 All jobs Completed!
+06/07/17 23:38:25 Note: 0 total job deferrals because of -MaxJobs limit (0)
+06/07/17 23:38:25 Note: 0 total job deferrals because of -MaxIdle limit (1000)
+06/07/17 23:38:25 Note: 0 total job deferrals because of node category throttles
+06/07/17 23:38:25 Note: 0 total PRE script deferrals because of -MaxPre limit (20) or DEFER
+06/07/17 23:38:25 Note: 0 total POST script deferrals because of -MaxPost limit (20) or DEFER
+06/07/17 23:38:25 DAG status: 0 (DAG_STATUS_OK)
+06/07/17 23:38:25 Of 2 nodes total:
+06/07/17 23:38:25  Done     Pre   Queued    Post   Ready   Un-Ready   Failed
+06/07/17 23:38:25   ===     ===      ===     ===     ===        ===      ===
+06/07/17 23:38:25     2       0        0       0       0          0        0
+06/07/17 23:38:25 0 job proc(s) currently held
+06/07/17 23:38:25 Wrote metrics file plates_reader.dag.metrics.
+06/07/17 23:38:25 Metrics not sent because of PEGASUS_METRICS or CONDOR_DEVELOPERS setting.
+06/07/17 23:38:25 **** condor_scheduniv_exec.43.0 (condor_DAGMAN) pid 2456 EXITING WITH STATUS 0

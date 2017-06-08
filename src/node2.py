@@ -34,7 +34,7 @@ class ContourWithData():
         self.intRectHeight = intHeight
 
     def checkIfContourIsValid(self):                            # this is oversimplified, for a production grade program
-        if self.intRectHeight > 70 and self.intRectHeight < 80 and self.intRectWidth <70:
+        if self.intRectHeight > 40 and self.intRectHeight < 100 and self.intRectWidth <70:
         #if self.intRectHeight > 0 and self.intRectHeight < 80 and self.intRectWidth < 70:
 #            print "PASS"
             return True
