@@ -1,5 +1,6 @@
 #!/usr/bin/env python
 
+import sys
 import cv2
 import numpy as np
 import operator
@@ -70,7 +71,7 @@ def main():
 
     kNearest.train(npaFlattenedImages, cv2.ml.ROW_SAMPLE, npaClassifications)
 
-    imgTestingNumbers = cv2.imread("bw_image.png")          # read in testing numbers image
+    imgTestingNumbers = cv2.imread(sys.argv[1])          # read in testing numbers image
 
     if imgTestingNumbers is None:                           # if image was not read successfully
         print "error: image not read from file \n\n"        # print error message to std out
@@ -147,6 +148,9 @@ def main():
     # end for
 
     print "\n" + strFinalString + "\n"                  # show the full string
+    file = open("test.txt","w")
+    file.write(strFinalString)
+    file.close()
 
 	#    cv2.imshow("imgTestingNumbers", imgTestingNumbers)      # show input image with green boxes drawn around found digits
     cv2.waitKey(0)                                          # wait for user key press

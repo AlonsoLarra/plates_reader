@@ -1,13 +1,13 @@
 Universe	= vanilla
 initialdir	= /home/alonsolarra/plates_reader/plates_reader/src/
-Executable	= node1.sh
-script_name	= node1.py
+Executable	= node2.sh
+script_name	= node2.py
 script_path	= /home/alonsolarra/plates_reader/plates_reader/src
-output_path	= /home/alonsolarra/plates_reader/plates_reader/tmp/$Fnx(FILE)
+output_path	= /home/alonsolarra/plates_reader/plates_reader/out/$Fnx(FILE).txt
 
 Arguments	= "$(script_path) $(script_name) /home/alonsolarra/plates_reader/plates_reader/plates/$Fnx(FILE) $(output_path)"
 Log		= /home/alonsolarra/plates_reader/plates_reader/logs/$Fnx(FILE).log
 Error		= /home/alonsolarra/plates_reader/plates_reader/error/$Fnx(FILE).error
 queue FILE MATCHING (
-    /home/alonsolarra/plates_reader/plates_reader/plates/*.png
+    /home/alonsolarra/plates_reader/plates_reader/tmp/*.png
 )

@@ -1,1 +1,0 @@
-/home/alonsolarra/Plates_Reader/plates_reader/src/node1.py /home/alonsolarra/Plates_Reader/plates_reader/plates/1.png /home/alonsolarra/Plates_Reader/plates_reader/out/
